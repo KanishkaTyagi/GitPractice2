@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [CapsuleCRMTestAutomationSuite]">
+  <listeners>
+    <listener class-name="com.capsuleCRM.ExtentReportListener.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="CapsuleCRMTest(failed)">
+    <classes>
+      <class name="com.capsuleCRM.testcases.PersonAndCasePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyAddCaseDataTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.capsuleCRM.testcases.PersonAndCasePageTest -->
+      <class name="com.capsuleCRM.testcases.AccountsPageTest">
+        <methods>
+          <include name="verifyAddNewIntegrations"/>
+          <include name="verifyAddNewUser"/>
+          <include name="verifyAddNewMilestone"/>
+          <include name="verifyAddNewTracks"/>
+          <include name="verifyAddNewTags"/>
+          <include name="verifyAddNewTasks"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.capsuleCRM.testcases.AccountsPageTest -->
+    </classes>
+  </test> <!-- CapsuleCRMTest(failed) -->
+</suite> <!-- Failed suite [CapsuleCRMTestAutomationSuite] -->
